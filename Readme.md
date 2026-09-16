@@ -47,12 +47,12 @@ El sistema valida la sesión antes de permitir el acceso a las funcionalidades p
 
 ### Credenciales de Prueba
 *Administrador*
-Usuario : admin
-Contraseña: admin123
+Usuario : nombre de usuario
+Contraseña: xxxx
 
 *Usuario*
-Usuario : yessica
-Contraseña: hola26
+Usuario : nombre
+Contraseña: xxxxx
 
 ### Consulta de libros
 
