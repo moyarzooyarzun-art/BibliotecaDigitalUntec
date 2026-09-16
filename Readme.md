@@ -45,15 +45,6 @@ Al ingresar a la aplicación, el usuario debe autenticarse mediante sus credenci
 
 El sistema valida la sesión antes de permitir el acceso a las funcionalidades protegidas.
 
-### Credenciales de Prueba
-*Administrador*
-Usuario : nombre de usuario
-Contraseña: xxxx
-
-*Usuario*
-Usuario : nombre
-Contraseña: xxxxx
-
 ### Consulta de libros
 
 Una vez iniciada la sesión, el usuario puede acceder al listado de libros disponibles y consultar información como:
