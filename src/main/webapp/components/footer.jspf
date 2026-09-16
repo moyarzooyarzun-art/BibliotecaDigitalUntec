@@ -1,0 +1,15 @@
+<footer class="bg-secondary text-white text-center py-3 mt-5">
+
+    <div class="container">
+
+        <p class="mb-1">
+            Biblioteca UNTEC
+        </p>
+
+        <small>
+            Sistema de Gestión de Biblioteca
+        </small>
+
+    </div>
+
+</footer>

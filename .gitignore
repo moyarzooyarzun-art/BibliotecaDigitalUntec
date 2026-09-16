@@ -1,0 +1,18 @@
+# Compilación
+target/
+build/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Base de datos local
+BaseDatosBiblioteca.sql
+
+# Documentación / archivos auxiliares
+PantallazosBibliotecaDigital.docx
+
+# Archivos temporales
+*.log
+*.tmp

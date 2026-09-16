@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F7FA;
+}
+
+/* Encabezado del login */
+.login-header {
+    background-color: #243B53 !important;
+    color: white;
+}
+/* Tarjeta del login */
+.login-card {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+/* Botón ingresar */
+.btn-ingresar {
+    background-color: #2F80ED !important;
+    border: 1px solid #2F80ED !important;
+    color: #FFFFFF !important;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.btn-ingresar:hover {
+    background-color: #1D5FBF !important;
+    border-color: #1D5FBF !important;
+    color: #FFFFFF !important;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+

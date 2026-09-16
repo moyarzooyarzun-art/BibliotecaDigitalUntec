@@ -1,0 +1,77 @@
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm"
+	style="background-color: #243B53;">
+  
+ 	<div class="container">
+		<a class="navbar-brand fw-bold" href="${pageContext.request.contextPath}/index.jsp">
+              
+            Biblioteca UNTEC
+
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarPrincipal"
+            aria-controls="navbarPrincipal"
+            aria-expanded="false"
+            aria-label="Mostrar navegación">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarPrincipal">
+        	<ul class="navbar-nav ms-auto align-items-center gap-2">
+            <li class="nav-item">
+                    <a class="nav-link" href="${pageContext.request.contextPath}/index.jsp">
+
+                        Home
+
+                    </a>
+
+                </li>
+				
+                <!-- USUARIO AUTENTICADO -->
+                <c:if test="${not empty sessionScope.usuario}">
+                
+                	<!-- ADMIN -->
+                    <c:if test="${sessionScope.rol == 'ADMIN'}">
+                <li class="nav-item">
+                
+                    <a class="nav-link"
+                       href="${pageContext.request.contextPath}/libro?accion=nuevo">
+                       Registro de Libros
+                    </a>       
+				    </li>
+                </c:if>
+               
+					<!-- USUARIO -->
+                    <li class="nav-item">
+                    <span class="badge bg-warning text-dark py-2 px-3">
+                            ${sessionScope.usuario.username}                            -
+                            ${sessionScope.rol}
+                        </span>
+                    </li>
+
+                    <!-- LOGOUT -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="${pageContext.request.contextPath}/logout">
+                            Cerrar sesión
+                        </a>
+                    </li>
+                </c:if>
+           			 <!-- VISITANTE NO AUTENTICADO -->
+                <c:if test="${empty sessionScope.usuario}">
+                    <li class="nav-item">
+                        <a class="nav-link" href="${pageContext.request.contextPath}/login">
+                            Login
+                        </a>
+                    </li>
+                </c:if>
+            </ul>
+        </div>
+    </div>
+</nav>
